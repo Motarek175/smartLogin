@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #24353f;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  padding: 8px 16px;
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header .content {
+  padding: 8px 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .content p {
+  font-size: 20px;
+  margin: 0 16px 0 0;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.header .content button {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 2px solid #28a745;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0.25rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.header .content button:hover {
+  background-color: #28a745;
+}
+
+.welcome {
+  padding: 48px;
+  color: #17a2b8;
+  text-align: center;
+  box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+  max-width: 100%;
+  line-height: 1.5;
+  width: 780px;
+}
+
+.welcome h1 {
+  display: block;
+  font-size: 40px;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.welcome .title h1 span {
+  color: #28a745;
+}
+
+@media (width <= 470px) {
+  .welcome {
+    padding: 24px;
+  }
+
+  .welcome h1 {
+    font-size: 25px;
+  }
+}
